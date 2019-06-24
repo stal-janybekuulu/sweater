@@ -5,13 +5,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
 @Entity //Сущность таблицы в БД
 public class Message {
 
@@ -25,9 +25,6 @@ public class Message {
     public Message(String text, String tag) {
         this.text = text;
         this.tag = tag;
-    }
-
-    public Message() {
     }
 
 }
